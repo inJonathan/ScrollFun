@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>ScrollFun</title>
+		<link rel="stylesheet" type="text/css" href="animate.min.css" />
+		<style type="text/css">
+			.wrap {
+				position: relative;
+				width: 100%;
+			}
+			
+			.wrap>ul>li {
+				margin: 120px 0;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<div class="wrap">
+			<ul>
+				<li class="myfun">
+					<h3>Hello ScrollFun!</h3>
+				</li>
+				<li class="myfun">
+					<h3>Hello ScrollFun!</h3>
+				</li>
+				<li class="myfun">
+					<h3>Hello ScrollFun!</h3>
+				</li>
+				<li class="myfun">
+					<h3>Hello ScrollFun!</h3>
+				</li>
+				<li class="myfun">
+					<h3>Hello ScrollFun!</h3>
+				</li>
+				<li class="myfun">
+					<h3>Hello ScrollFun!</h3>
+				</li>
+				<li class="myfun">
+					<h3>Hello ScrollFun!</h3>
+				</li>
+			</ul>
+		</div>
+
+		<script src="jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="ScrollFun.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var p = new ScrollFun({
+				elem: ".myfun"
+			});
+			p.init();
+		</script>
+	</body>
+
+</html>
