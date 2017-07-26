@@ -1,4 +1,4 @@
-/*ScrollFun v1.0 - 2017-7-26 - JonathanCho - https://github.com/inJonathan*/
+/*ScrollFun v1.0 - 2017-7-26 - JonathanCho - https://github.com/inJonathan/ScrollFun*/
 var ScrollFun = function(option) {
     // 默认配置
     option.offset ? option.offset = option.offset : option.offset = "0"; // 开始播放动画距离
