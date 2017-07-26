@@ -1,9 +1,12 @@
 # ScrollFun.js - 让页面滚动更有趣
 ScrollFun.js可以让你的页面在滚动时播放动画，使页面更有趣   *[在线DEMO](http://scrollfun.cc)
   
-1、引入文件  
+1、引入文件（支持jquery和zepto）  
   
-```<script src="ScrollFun.min.js" type="text/javascript" charset="utf-8"></script>```  
+```
+<script src="zepto.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="ScrollFun.min.js" type="text/javascript" charset="utf-8"></script>
+```  
   
 2、HTML  
   
