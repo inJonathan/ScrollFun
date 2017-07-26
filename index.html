@@ -8,13 +8,33 @@
 		<title>ScrollFun</title>
 		<link rel="stylesheet" type="text/css" href="animate.min.css" />
 		<style type="text/css">
+		    * {
+		        margin: 0;
+		        padding: 0;
+		    }
+		    
 			.wrap {
 				position: relative;
-				width: 100%;
+				width: 900px;
+				margin: 0 auto;
+				overflow: hidden;
 			}
 			
 			.wrap>ul>li {
-				margin: 120px 0;
+				margin: 210px 0;
+			}
+			
+			.row {
+			    text-align: center;
+			    padding: 40px 0;
+			}
+			
+			.myfun {
+			    display: inline-block;
+			    width: 320px;
+			    height: 320px;
+			    margin: 0 20px;
+			    background-color: gray;
 			}
 		</style>
 	</head>
@@ -22,38 +42,35 @@
 	<body>
 
 		<div class="wrap">
-			<ul>
-				<li class="myfun">
-					<h3>Hello ScrollFun!</h3>
-				</li>
-				<li class="myfun">
-					<h3>Hello ScrollFun!</h3>
-				</li>
-				<li class="myfun">
-					<h3>Hello ScrollFun!</h3>
-				</li>
-				<li class="myfun">
-					<h3>Hello ScrollFun!</h3>
-				</li>
-				<li class="myfun">
-					<h3>Hello ScrollFun!</h3>
-				</li>
-				<li class="myfun">
-					<h3>Hello ScrollFun!</h3>
-				</li>
-				<li class="myfun">
-					<h3>Hello ScrollFun!</h3>
-				</li>
-			</ul>
+			<div class="row">
+			    <div class="myfun"></div>
+			    <div class="myfun" data-action = "rotateIn"></div>
+			</div>
+			<div class="row">
+			    <div class="myfun" data-action = "flipInY"></div>
+			    <div class="myfun"></div>
+			</div>
+			<div class="row">
+			    <div class="myfun" data-action = "bounceIn"></div>
+			    <div class="myfun"></div>
+			</div>
+			<div class="row">
+			    <div class="myfun" data-action = "zoomInLeft"></div>
+			    <div class="myfun" data-action = "fadeInRight"></div>
+			</div>
+			<div class="row">
+			    <div class="myfun" data-action = "rollIn"></div>
+			    <div class="myfun" data-action = "jello"></div>
+			</div>
 		</div>
 
-		<script src="jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="zepto.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="ScrollFun.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
-			var p = new ScrollFun({
+			var sfun = new ScrollFun({
 				elem: ".myfun"
 			});
-			p.init();
+			sfun.init();
 		</script>
 	</body>
 
