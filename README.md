@@ -20,4 +20,4 @@ var sfun = new ScrollFun({
     offset: "40" // 距离底部多少开始播放动画，默认0  
 });  
 sfun.init(); // 初始化ScrollFun  
-```  
+```
