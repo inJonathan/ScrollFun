@@ -95,16 +95,17 @@
         
         <div class="use">
             <h2>使用方法</h2>
-            <p>1、引入<a href="animate.min.css" download="animate.min.css">animate.css</a></p>
-            <pre class="brush:xml">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;css/animate.min.css&quot; /&gt;</pre>
+            <p>1、引入animate.css[<a href="animate.min.css" download="animate.min.css">下载</a>]</p>
+            <pre class="brush:xml">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;css/animate.min.css&quot; /&gt;</pre><br />
             <p>2、引入js（支持jquery和zepto）</p>
-            <pre class="brush:xml">&lt;script src=&quot;zepto.min.js&quot; type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;<br />&lt;script src=&quot;ScrollFun.min.js&quot; type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;</pre>
+            <pre class="brush:xml">&lt;script src=&quot;zepto.min.js&quot; type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;<br />&lt;script src=&quot;ScrollFun.min.js&quot; type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;</pre><br />
             <p>3、HTML</p>
+            <p>使用data-action属性定义动画效果，具体动画名称参照<a target="_blank" href="https://daneden.github.io/animate.css/">animate.css</a>网站</p>
             <pre class="brush:xml">&lt;div class=&quot;myfun&quot; data-action=&quot;fadeInLeft&quot;&gt;&lt;/div&gt;</pre>
-            <p>可以添加动画播放的延迟时间，加入data-delay属性，这里演示延迟1.5秒</p>
+            <p>可以为动画添加延迟时间，加入data-delay属性，这里演示延迟1.5秒</p>
             <pre class="brush:xml">&lt;div class=&quot;myfun&quot; data-action=&quot;fadeInLeft&quot; data-delay=&quot;1.5s&quot;&gt;&lt;/div&gt;</pre>
             <p>也可以设置动画的持续时间，加入data-duration属性，这里演示持续2秒</p>
-            <pre class="brush:xml">&lt;div class=&quot;myfun&quot; data-action=&quot;fadeInLeft&quot; data-duration=&quot;2s&quot;&gt;&lt;/div&gt;</pre>
+            <pre class="brush:xml">&lt;div class=&quot;myfun&quot; data-action=&quot;fadeInLeft&quot; data-duration=&quot;2s&quot;&gt;&lt;/div&gt;</pre><br />
             <p>4、JavaScript</p>
             <pre class="brush:xml">
 var sfun = new ScrollFun({
@@ -117,7 +118,7 @@ sfun.init(); // 初始化ScrollFun
         
         <div class="footer">
             <iframe src="https://ghbtns.com/github-btn.html?user=inJonathan&repo=ScrollFun&type=star&count=true" frameborder="0" scrolling="0" width="100px" height="24px"></iframe>
-            <a target="_blank" href="dist/ScrollFun.min.js" download="ScrollFun.min.js" style="margin: 0 60px;">下载 ScrollFun.js v1.0</a>
+            <a target="_blank" href="dist/ScrollFun.min.js" download="ScrollFun.min.js" style="margin: 0 60px;text-decoration: underline;">下载 ScrollFun.js v1.0</a>
             <a target="_blank" href="https://github.com/inJonathan" >@Jonathan Cho</a>
         </div>
 
