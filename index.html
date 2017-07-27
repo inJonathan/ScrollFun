@@ -41,6 +41,7 @@
             .use { position: relative;width: 900px;margin: auto;color: #666; }
             .use h2 {width: 100%;padding: 10px 0;margin: 20px 0;border-bottom: 1px solid #ccc;}
             .use pre { margin:10px 0;max-height: 400px;padding: 10px;border: 1px solid #f0f0f0;font: 13px/24px Consolas,"Lucida Sans Typewriter","Lucida Console",Monaco,"Bitstream Vera Sans Mono",monospace;background-color: #f8f8f8;overflow: auto; }
+            .use a { color: #666; }
         </style>
     </head>
 
@@ -86,7 +87,7 @@
             </div>
             <div class="row">
                 <div class="myfun bg-yellow" data-action="fadeInLeft"></div>
-                <div class="myfun bg-blue" data-action="fadeInRight">
+                <div class="myfun bg-blue" data-action="fadeInRight" data-duration="2s">
                 	<div class="inner">ScrollFun.js</div>
                 </div>
             </div>
@@ -94,13 +95,17 @@
         
         <div class="use">
             <h2>使用方法</h2>
-            <p>1、引入文件（支持jquery和zepto）</p>
+            <p>1、引入<a href="animate.min.css" download="animate.min.css">animate.css</a></p>
+            <pre class="brush:xml">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;css/animate.min.css&quot; /&gt;</pre>
+            <p>2、引入js（支持jquery和zepto）</p>
             <pre class="brush:xml">&lt;script src=&quot;zepto.min.js&quot; type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;<br />&lt;script src=&quot;ScrollFun.min.js&quot; type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;</pre>
-            <p>2、HTML</p>
-            <pre class="brush:xml">&lt;div class=&quot;myfun data-action=&quot;fadeInLeft&quot;&gt;&lt;/div&gt;</pre>
-            <p>也可以添加动画播放的延迟时间，加入data-delay属性，这里演示延迟1.5秒</p>
-            <pre class="brush:xml">&lt;div class=&quot;myfun data-action=&quot;fadeInLeft&quot; data-delay=&quot;1500&quot;&gt;&lt;/div&gt;</pre>
-            <p>3、JavaScript</p>
+            <p>3、HTML</p>
+            <pre class="brush:xml">&lt;div class=&quot;myfun&quot; data-action=&quot;fadeInLeft&quot;&gt;&lt;/div&gt;</pre>
+            <p>可以添加动画播放的延迟时间，加入data-delay属性，这里演示延迟1.5秒</p>
+            <pre class="brush:xml">&lt;div class=&quot;myfun&quot; data-action=&quot;fadeInLeft&quot; data-delay=&quot;1.5s&quot;&gt;&lt;/div&gt;</pre>
+            <p>也可以设置动画的持续时间，加入data-duration属性，这里演示持续2秒</p>
+            <pre class="brush:xml">&lt;div class=&quot;myfun&quot; data-action=&quot;fadeInLeft&quot; data-duration=&quot;2s&quot;&gt;&lt;/div&gt;</pre>
+            <p>4、JavaScript</p>
             <pre class="brush:xml">
 var sfun = new ScrollFun({
     elem: ".myfun", // 定义元素名
